@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrito de compra">
+    <meta name="keywords" content="Granito,Marmol,Silestone,Compromiso,Cumplimiento,Mesada,Vantoris">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CARRITO</title>
+</head>
+
+<body>
+    <header>
+        <div class="grande"><img class="logo-2" src="../imagen/image-logo.png" alt="logo">
+        </div>
+
+        <nav class="navbar navbar-expand-lg menu-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <div class="chico"><img class="logo-1" src="../imagen/image-logo.png" alt="logo">
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav menu">
+                        <li class="nav-item menu-cent">
+                            <a class="nav-link active menu-1" aria-current="page" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item menu-cent">
+                            <a class="nav-link menu-1" href="quienes-somos.html">QUIENES SOMOS</a>
+                        </li>
+                        <li class="nav-item menu-cent">
+                            <a class="nav-link menu-1" href="trabajos-realizados.html">TRABAJOS REALIZADOS</a>
+                        </li>
+                        <li class="nav-item menu-cent">
+                            <a class="nav-link menu-1" href="materiales.html">MATERIALES</a>
+                        </li>
+                        <li class="nav-item menu-cent">
+                            <a class="nav-link menu-1" href="contacto.html">CONTACTOS</a>
+                        </li>
+
+                        <li class="nav-item menu-cent">
+                            <a class="nav-link menu-1" href="carrito.html">CARRITO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>ELEGI TU PRODUCTO</h1>
+    </header>
+
+    <main>
+
+
+
+        <style>
+            .producto {
+                display: inline-block;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+
+            img {
+                max-width: 100px;
+                max-height: 100px;
+            }
+
+            #carrito {
+                margin-top: 20px;
+            }
+        </style>
+
+    
+        <div id="productos">
+
+        </div>
+    
+        <h3>Carrito de Compras</h3>
+        
+        <div id="carrito">
+            <h4>Productos en el carrito:</h4>
+            <ul id="lista-carrito"></ul>
+            <p>Total: <span id="total"></span></p>
+            <button id="comprar">Comprar</button>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <div>
+
+            <img class=imagen src="../imagen/apreton-de-manos.png" alt="acuerdo">
+
+            <h2>Compromiso 100% con el cliente</h2>
+        </div>
+        <div>
+            <img class=imagen src="../imagen/reloj.png" alt="reloj">
+            <h2>Cumplimiento con la entrega</h2>
+
+        </div>
+        <div>
+            <img class=imagen src="../imagen/whatsapp.png" alt="icono Whatsapp">
+            <h2>Contactanos vía Whatsapp </h2>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script src="../clase.js"></script>
+
+
+</body>
+
+</html>

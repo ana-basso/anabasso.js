@@ -1,0 +1,238 @@
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: $color-1;
+}
+
+header {
+
+    img {
+        @include responsive;
+    }
+
+    .chico {
+
+        @include flex;
+    }
+
+    .logo-1 {
+        text-align: center;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .logo-2 {
+        display: none;
+    }
+
+    h1 {
+        color: $color-1;
+        background-color: $color-3;
+        text-align: center;
+    }
+
+    a:active {
+        background-color: $color-3;
+    }
+
+}
+
+main {
+    .centrar {
+        @include flex;
+    }
+
+    .parrafo {
+        margin-top: 3rem;
+        text-align: center;
+        padding: 0, 5rem;
+
+    }
+
+    div {
+        img {
+            @include responsive;
+        }
+    }
+
+    iframe {
+        @include responsive;
+    }
+
+    form {
+        @extend %estilo;
+
+        fieldset {
+
+            .formato {
+                @include flex;
+                flex-direction: column;
+                color: $color-3;
+            }
+
+            legend {
+                .leyenda {
+                    color:$color-2;
+                    @extend %estilo;
+                    margin-bottom:2rem;
+                    font-size: 16px;
+                }
+
+                form {
+                    .h {
+                        padding: 4rem;
+                    }
+
+                    div {
+                        button {
+                            .color-boton {
+                                background-color: $color-3 ;
+                                color: $color-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hijo {
+        @include flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+
+        .c {
+            text-align: center;
+
+        }
+    }
+
+    .materiales {
+        @extend %estilo;
+        background-color: $color-4;
+        color: white;
+    }
+
+    .mi-clase:not(.collapsed) {
+        background-color: $color-4;
+        border-color: $color-4;
+    }
+
+    .acordion-item:not(.collapsed) .acordion-button:not(.collapsed) {
+        border-color: transparent;
+    }
+
+    .accordion-button:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+seccion {
+    div {
+        img {
+            @include responsive;
+        }
+    }
+
+    div {
+        .dato {
+            @include flex;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 0, 5rem;
+            color: $color-3;
+            margin-top: 2rem;
+        }
+    }
+
+    .contact {
+        margin-top: 2rem;
+    }
+}
+
+footer {
+    background-color: $color-3;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding: 20px;
+    display: flex;
+
+    div {
+        @include flex;
+        flex-direction: column;
+
+        img {
+            width: 1rem;
+            height: 1rem;
+
+        }
+
+        h2 {
+            text-align: center;
+            gap: 1rem;
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+    header {
+
+        .logo-1 {
+            display: none;
+        }
+
+        .logo-2 {
+            display: block;
+
+        }
+
+        nav {
+            ul {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 2rem;
+                gap: 2rem;
+            }
+        }
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+
+        div {
+            @include flex;
+            flex-direction: column;
+
+            h2 {
+                text-align: center;
+                gap: 2rem;
+                font-size: 12px;
+            }
+
+            img {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}

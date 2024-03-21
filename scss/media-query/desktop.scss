@@ -1,0 +1,163 @@
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+//estilos para desktop
+
+@media screen and (min-width: 980px) {
+
+    header {
+        .logo-1 {
+            display: block;
+
+        }
+
+        .logo-2 {
+            display: none;
+
+        }
+
+        .menu {
+            display: flex;
+            justify-content:end;
+            align-items:center;
+            padding: 2rem;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .menu-cent {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu-1 {
+            display: flex;
+            color:$color-2;
+            text-decoration: none;
+            list-style: none;
+            font-size: 16px;
+
+        }
+    }
+
+    main {
+        .img-home {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        
+
+        .carousel-item {
+            height: 600px;;
+            width: 600px;
+
+        }
+
+
+        div {
+            .m {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 50%);
+                grid-template-areas:
+                    "imagen1 imagen2 imagen3 imagen4";
+                margin: 2rem 1rem 1rem 1rem;
+            }
+        }
+
+        div {
+            .l {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 50%);
+                grid-template-areas:
+                    "imagen5 imagen6 imagen7 imagen8";
+                margin: 2rem 1rem 1rem 1rem;
+            }
+        }
+
+        div {
+            .s {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 50%);
+                grid-template-areas:
+                    "imagen9 imagen10 imagen11 imagen12";
+                margin: 2rem 1rem 1rem 1rem;
+            }
+        }
+
+        div {
+            .p {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(1, 50%);
+                grid-template-areas:
+                    "imagen13 imagen14 imagen15 imagen16";
+                margin: 2rem 1rem 1rem 1rem;
+            }
+        }
+
+        div {
+            .cocina {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 80%);
+                grid-template-areas:
+                    "cocina-1 cocina-2"
+                    "cocina-3 cocina-4"
+                    "cocina-5 cocina-6"
+                    "cocina-7 cocina-7";
+                margin: 1rem 1rem 63rem 1rem;
+            }
+        }
+    }
+
+    .b {
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 95%);
+        grid-template-areas:
+            "b-1 b-2"
+            "b-4 b-5"
+            "b-3 b-3";
+        margin: 1rem 1rem 65rem 1rem;
+    }
+
+    div {
+        .otros {
+            height: 85vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 95%);
+            grid-template-areas:
+                "otros-1 otros-2";
+            margin: 1rem 1rem 3rem 1rem;
+        }
+    }
+
+    seccion {
+        .img-home {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .carousel-item {
+            height: 500px;
+            width: 800px;
+
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info {
+            width: 900px;
+            height: 500px;
+        }
+    }
+
+}

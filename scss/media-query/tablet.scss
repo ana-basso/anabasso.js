@@ -1,0 +1,284 @@
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+//estilos tablet
+@media screen and (min-width: 600px) {
+
+    header {
+
+        img {
+            @include responsive;
+        }
+
+        .grande {
+            @include flex;
+        }
+
+        .logo-2 {
+            display: block;
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+        }
+
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        div {
+            .m {
+                @include queries;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 50%);
+                grid-template-areas:
+                    "imagen1 imagen2"
+                    "imagen3 imagen4";
+                margin: 1rem 1rem 2rem 1rem;
+            }
+        }
+
+        .imagen1 {
+            grid-area: imagen1;
+        }
+
+        .imagen2 {
+            grid-area: imagen2;
+        }
+
+        .imagen3 {
+            grid-area: imagen3;
+        }
+
+        .imagen4 {
+            grid-area: imagen4;
+        }
+
+        div {
+            .l {
+                @include queries;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 50%);
+                grid-template-areas:
+                    "imagen5 imagen6"
+                    "imagen7 imagen8";
+                margin: 1rem 1rem 2rem 1rem;
+            }
+        }
+
+        .imagen5 {
+            grid-area: imagen5;
+        }
+
+        .imagen6 {
+            grid-area: imagen6;
+        }
+
+        .imagen7 {
+            grid-area: imagen7;
+        }
+
+        .imagen8 {
+            grid-area: imagen8;
+        }
+
+        div {
+            .s {
+                @include queries;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 50%);
+                grid-template-areas:
+                    "imagen9 imagen10"
+                    "imagen11 imagen12";
+                margin: 1rem 1rem 2rem 1rem;
+            }
+        }
+
+        .imagen9 {
+            grid-area: imagen9;
+        }
+
+        .imagen10 {
+            grid-area: imagen10;
+        }
+
+        .imagen11 {
+            grid-area: imagen11;
+        }
+
+        .imagen12 {
+            grid-area: imagen12;
+        }
+
+        div {
+            .p {
+                @include queries;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 50%);
+                grid-template-areas:
+                    "imagen13 imagen14"
+                    "imagen15 imagen16";
+                margin: 1rem 1rem 3rem 1rem;
+            }
+        }
+
+        .imagen13 {
+            grid-area: imagen13;
+        }
+
+        .imagen14 {
+            grid-area: imagen14;
+        }
+
+        .imagen15 {
+            grid-area: imagen15;
+        }
+
+        .imagen16 {
+            grid-area: imagen16;
+        }
+
+        div {
+            .cocina {
+                @include queries;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 50%);
+                grid-template-areas:
+                    "cocina-1 cocina-2"
+                    "cocina-3 cocina-4"
+                    "cocina-5 cocina-6"
+                    "cocina-7 cocina-7";
+                margin: 1rem 1rem 27rem 1rem;
+            }
+        }
+
+        .cocina-1 {
+            grid-area: cocina-1;
+        }
+
+        .cocina-2 {
+            grid-area: cocina-2;
+        }
+
+        .cocina-3 {
+            grid-area: cocina-3;
+        }
+
+        .cocina-4 {
+            grid-area: cocina-4;
+        }
+
+        .cocina-5 {
+            grid-area: cocina-5;
+        }
+
+        .cocina-6 {
+            grid-area: cocina-6;
+        }
+
+        .cocina-7 {
+            grid-area: cocina-7;
+            column-span: 2;
+
+        }
+
+        div {
+
+            .b {
+                height: 95vh;
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 60%);
+                grid-template-areas:
+                    "b-1 b-2"
+                    "b-4 b-5"
+                    "b-3 b-3";
+                margin: 1rem 1rem 35rem 1rem;
+            }
+        }
+
+        .b-1 {
+            grid-area: b-1;
+
+        }
+
+        .b-2 {
+            grid-area: b-2;
+        }
+
+        .b-3 {
+            grid-area: b-3;
+            column-span: 2;
+        }
+
+
+        .b-4 {
+            grid-area: b-4;
+        }
+
+        .b-5 {
+            grid-area: b-5;
+        }
+
+        div {
+            .otros {
+                @include queries;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(1, 90%);
+                grid-template-areas:
+                    "otros-1 otros-2";
+                margin: 1rem 1rem 3rem 1rem;
+            }
+        }
+
+        .otros-1 {
+            grid-area: otros-1;
+            column-span: 2;
+        }
+
+        .otros-2 {
+            grid-area: otros-2;
+            column-span: 2;
+        }
+
+        form {
+            @include flex;
+
+            .complet {
+                width: 20rem;
+            }
+        }
+
+        .desc {
+            display: flex;
+            text-align: center;
+        }
+
+    }
+
+    footer {
+
+        div {
+            h2 {
+                font-size: 16px;
+            }
+
+            @include responsive;
+        }
+
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+}
